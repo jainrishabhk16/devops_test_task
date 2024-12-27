@@ -178,3 +178,26 @@ resource "kubernetes_service" "graphite" {
     type = "ClusterIP" 
   }
 }
+
+
+# Create a Kubernetes Service for StatsD
+resource "kubernetes_service" "statsd" {
+  metadata {
+    name      = "node-statsd"
+    namespace = "monitoring" # Replace with your desired namespace
+  }
+
+  spec {
+    selector = {
+      app = "statsd"
+    }
+
+    ports {
+      protocol   = "udp"
+      port       = 8125
+      target_port = 8125
+    }
+
+    type = "ClusterIP" 
+  }
+}
