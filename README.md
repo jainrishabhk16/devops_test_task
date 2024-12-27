@@ -112,9 +112,24 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
   - We will be creating the modules for the services for which we will be deploying the services.
   - This directory will contain the WAF, VPC, Load Balancer, Kubernetes and EKS Module
 
+- **Kubernetes services**
+  - We are deploying a deployment for the node.js app for which we have are building the docker image.
+  - We are also deploying the deployment for the Graphite UI for visualizing the metrics. 
+  - We are claiming a PVC from the gp2 storage class for graphite deployment.
+  - There are a couple of ways from which we can deploy these services, here we are using the Kubernetes provider and creating Kubernetes resources for deploying our Kubernetes objects.
+    - We can also create helm charts or kustomize for our services and use them with Terraform to deploy our services on Kubernetes
+  
 ### Steps to deploy 
 - We need to change the directory to the environment we want to deploy.
 - Run terraform init
 - Run terraform plan -out plan
 - Once you find the terraform plan as expected, run `terraform apply plan`. This command will deploy our resources on AWS.
+
+## Enhancements which can be done
+- If we have any secrets that are needed by the app which we are deploying then we can utilize Kubernetes secrets or Hashicorp key Vault which will help us securely use our secrets with the deployments.
+- We can create ingress to make sure that our application is accessed securely
+- We can utilize cert-manager service in AWS to manage our SSL/TLS certificates.
+- To manage the DNS we can also utlize the route53 service in AWS. We can also integrate other DNS providers like cloudflare very efficiently with Terraform.
+
+
 
