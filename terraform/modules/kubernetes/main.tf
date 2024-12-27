@@ -156,3 +156,25 @@ resource "kubernetes_persistent_volume_claim" "graphite_storage" {
     storage_class_name = var.storage_class_name
   }
 }
+
+# Create a Kubernetes Service for Graphite
+resource "kubernetes_service" "graphite" {
+  metadata {
+    name      = "graphite"
+    namespace = "default" # Replace with your desired namespace
+  }
+
+  spec {
+    selector = {
+      app = "graphite-web"
+    }
+
+    ports {
+      protocol   = "TCP"
+      port       = 80
+      target_port = 80
+    }
+
+    type = "ClusterIP" 
+  }
+}
