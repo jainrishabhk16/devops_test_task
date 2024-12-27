@@ -40,8 +40,10 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
 - Creating a `Dockerfile` will allow us to build the docker image for the application. We will be using the .env file to pass on the environment variables to build images for different environments.
 
 ### Terraform
-- We will be creating terraform modules to deploy services on AWS. We will be creating modules for deploying our application on the AWS EKS cluster. 
-- We will be adding modules for EKS, VPC, WAF, Security Group, Kubernetes and Load balancing. Given below is the folder structure for the project. 
+- We are creating terraform modules to deploy services on AWS. We will be creating modules for deploying our application on the AWS EKS cluster. 
+- We are adding modules for EKS, VPC, WAF, Security Group, Kubernetes and Load balancing. Given below is the folder structure for the project.
+- We are using modules for [EKS](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest) and [VPC](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest) which are provided by terraform. 
+
 
 ```bash.
 ├── Dockerfile
