@@ -49,17 +49,26 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
 └── terraform
     ├── environments
     │   ├── dev
+    │   │   ├── backend.tf
+    │   │   ├── locals.tf
     │   │   ├── main.tf
+    │   │   ├── provider.tf
     │   │   ├── terraform.tfvars
     │   │   └── variables.tf
     │   ├── prod
+    │   │   ├── backend.tf
+    │   │   ├── locals.tf
     │   │   ├── main.tf
+    │   │   ├── provider.tf
     │   │   ├── terraform.tfvars
     │   │   └── variables.tf
     │   └── uat
-    │       ├── main.tf
-    │       ├── terraform.tfvars
-    │       └── variables.tf
+    │       ├── backend.tf
+    │   │   ├── locals.tf
+    │   │   ├── main.tf
+    │   │   ├── provider.tf
+    │   │   ├── terraform.tfvars
+    │   │   └── variables.tf
     └── modules
         ├── eks
         │   ├── main.tf
