@@ -85,16 +85,22 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
             ├── main.tf
             ├── outputs.tf
             └── variables.tf
-
-
 ```
 
 #### Folder Structure
 - **Environments** 
   - We will be creating the three folders for Dev, UAT, and Prod for all three environments. 
-  - These folders will be having the terraform files which will be calling the modules for deploying the AWS services in the respective environments. 
-  - All environments will be having different variables, so we can separate the environments based on the variables. 
+  - These folders will have the terraform files which will call the modules for deploying the AWS services in the respective environments. 
+  - All environments will have different variables, so we can separate the environments based on the variables.
+  - The environment directory will have the `main.tf`, `terraform.tfvars`, `provider.tf`, `backend.tf`, `locals.tf` and `variables.tf` files for every environment we will be deploying. 
 
 - **Modules**
-  - We will be creating the modules for the services which we will be deploying the services.  
+  - We will be creating the modules for the services for which we will be deploying the services.
+  - This directory will contain the WAF, VPC, Load Balancer, Kubernetes and EKS Module
+
+### Steps to deploy 
+- We need to change the directory to the environment we want to deploy.
+- Run terraform init
+- Run terraform plan -out plan
+- Once you find the terraform plan as expected, run `terraform apply plan`. This command will deploy our resources on AWS.
 
