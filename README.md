@@ -41,16 +41,52 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
 - We will be adding modules for EKS, VPC, Load balancing. 
 
 ```bash.
-├── environments
-│   ├── dev
-│   ├── prod
-│   └── uat
-└── modules
-    ├── eks
-    ├── iam
-    ├── load_balancer
-    └── vpc
-    └── waf
+├── Dockerfile
+├── index.js
+├── package.json
+├── package-lock.json
+├── README.md
+└── terraform
+    ├── environments
+    │   ├── dev
+    │   │   ├── main.tf
+    │   │   ├── terraform.tfvars
+    │   │   └── variables.tf
+    │   ├── prod
+    │   │   ├── main.tf
+    │   │   ├── terraform.tfvars
+    │   │   └── variables.tf
+    │   └── uat
+    │       ├── main.tf
+    │       ├── terraform.tfvars
+    │       └── variables.tf
+    └── modules
+        ├── eks
+        │   ├── main.tf
+        │   ├── outputs.tf
+        │   └── variables.tf
+        ├── kubernetes
+        │   ├── main.tf
+        │   ├── outputs.tf
+        │   └── variables.tf
+        ├── load_balancer
+        │   ├── main.tf
+        │   ├── outputs.tf
+        │   └── variables.tf
+        ├── security_groups
+        │   ├── main.tf
+        │   ├── outputs.tf
+        │   └── variables.tf
+        ├── vpc
+        │   ├── main.tf
+        │   ├── outputs.tf
+        │   └── variables.tf
+        └── waf
+            ├── main.tf
+            ├── outputs.tf
+            └── variables.tf
+
+
 ```
 
 #### Folder Structure
