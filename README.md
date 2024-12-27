@@ -40,8 +40,7 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
 - We will be creating terraform modules to deploy services on aws. We will be creating modules for deploying our application on AWS EKS cluster. 
 - We will be adding modules for EKS, VPC, Load balancing. 
 
-```bash
-.
+```bash.
 ├── environments
 │   ├── dev
 │   ├── prod
@@ -51,6 +50,7 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
     ├── iam
     ├── load_balancer
     └── vpc
+    └── waf
 ```
 
 #### Folder Structure
