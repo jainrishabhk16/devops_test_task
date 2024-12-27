@@ -33,6 +33,9 @@ If you deploy it to any cloud platforms, please send us instructions & relevant 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Tasks performed
 
+![image](https://github.com/jainrishabhk16/devops_test_task/blob/main/secure-architecture-complete-flows.svg)
+
+
 ### Added Dockerfile
 - Created a `Dockerfile` will allow us to build the docker image for the application. We will be using the .env file to pass on the environment variables to build images for different environments.
 
