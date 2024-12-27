@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1300">
+  <!-- AWS Cloud Symbol with Region Boundary -->
+  <rect x="10" y="10" width="780" height="1260" fill="#ffffff" stroke="#232F3E" stroke-width="2"/>
+  <text x="40" y="40" font-family="Arial" font-size="16">AWS Cloud (Primary Region)</text>
+  
+  <!-- CloudWatch Logs Section -->
+  <rect x="600" y="60" width="160" height="100" fill="#ffe6cc" stroke="#666666" stroke-width="2"/>
+  <text x="620" y="90" font-family="Arial" font-size="12">CloudWatch Logs</text>
+  <text x="620" y="110" font-family="Arial" font-size="10">• VPC Flow Logs</text>
+  <text x="620" y="130" font-family="Arial" font-size="10">• Container Logs</text>
+  <text x="620" y="150" font-family="Arial" font-size="10">• Application Logs</text>
+  
+  <!-- Security Services Section -->
+  <rect x="30" y="60" width="160" height="100" fill="#ffe6cc" stroke="#666666" stroke-width="2"/>
+  <text x="50" y="90" font-family="Arial" font-size="12">Security Services</text>
+  <text x="50" y="110" font-family="Arial" font-size="10">• GuardDuty</text>
+  <text x="50" y="130" font-family="Arial" font-size="10">• Security Hub</text>
+  <text x="50" y="150" font-family="Arial" font-size="10">• AWS Config</text>
+  
+  <!-- Edge Security Layer -->
+  <rect x="200" y="60" width="390" height="100" fill="#ffe6cc" stroke="#666666" stroke-width="2"/>
+  <text x="220" y="85" font-family="Arial" font-size="14">Edge Security Layer</text>
+  <rect x="220" y="95" width="160" height="50" fill="#ffffff" stroke="#666666" stroke-width="2"/>
+  <text x="230" y="120" font-family="Arial" font-size="12">CloudFront + WAF</text>
+  <rect x="410" y="95" width="160" height="50" fill="#ffffff" stroke="#666666" stroke-width="2"/>
+  <text x="440" y="120" font-family="Arial" font-size="12">Shield Advanced</text>
+  
+  <!-- VPC Container -->
+  <rect x="30" y="180" width="740" height="1020" fill="#f2f2f2" stroke="#666666" stroke-width="2"/>
+  <text x="40" y="205" font-family="Arial" font-size="14">VPC with Security Groups + NACLs</text>
+  
+  <!-- Public Subnet -->
+  <rect x="50" y="220" width="700" height="200" fill="#e6e6e6" stroke="#666666" stroke-width="2"/>
+  <text x="60" y="240" font-family="Arial" font-size="14">Public Subnet</text>
+  
+  <!-- ALB Section -->
+  <rect x="70" y="260" width="200" height="140" fill="#ffffff" stroke="#666666" stroke-width="2"/>
+  <text x="90" y="280" font-family="Arial" font-size="12">Application Load Balancer</text>
+  <text x="90" y="300" font-family="Arial" font-size="10">• SSL Termination</text>
+  <text x="90" y="320" font-family="Arial" font-size="10">• WAF Rules</text>
+  <text x="90" y="340" font-family="Arial" font-size="10">• Security Groups</text>
+  
+  <!-- NAT Gateway Section -->
+  <rect x="530" y="260" width="200" height="140" fill="#ffffff" stroke="#666666" stroke-width="2"/>
+  <text x="550" y="280" font-family="Arial" font-size="12">NAT Gateway</text>
+  <text x="550" y="300" font-family="Arial" font-size="10">• Flow Logs Enabled</text>
+  <text x="550" y="320" font-family="Arial" font-size="10">• Security Groups</text>
+  
+  <!-- Private Subnet -->
+  <rect x="50" y="440" width="700" height="740" fill="#e6e6e6" stroke="#666666" stroke-width="2"/>
+  <text x="60" y="460" font-family="Arial" font-size="14">Private Subnet</text>
+  
+  <!-- EKS Cluster -->
+  <rect x="70" y="480" width="660" height="680" fill="#b3d9ff" stroke="#666666" stroke-width="2"/>
+  <text x="90" y="500" font-family="Arial" font-size="14">EKS Cluster</text>
+  
+  <!-- Application Components -->
+  <rect x="90" y="520" width="620" height="300" fill="#e6ffe6" stroke="#666666" stroke-width="2"/>
+  <text x="110" y="540" font-family="Arial" font-size="14">Application Namespace</text>
+  
+  <!-- Secrets Manager -->
+  <rect x="110" y="560" width="180" height="80" fill="#ffcccc" stroke="#666666" stroke-width="2"/>
+  <text x="130" y="590" font-family="Arial" font-size="12">Secrets Manager</text>
+  <text x="130" y="610" font-family="Arial" font-size="10">KMS Encrypted</text>
+  
+  <!-- Backend App -->
+  <rect x="310" y="560" width="180" height="240" fill="#ffe6b3" stroke="#666666" stroke-width="2"/>
+  <text x="330" y="590" font-family="Arial" font-size="12">Backend Application</text>
+  <text x="330" y="610" font-family="Arial" font-size="10">• IAM Roles</text>
+  <text x="330" y="630" font-family="Arial" font-size="10">• Pod Security Policy</text>
+  <text x="330" y="650" font-family="Arial" font-size="10">• Network Policy</text>
+  
+  <!-- Monitoring Components -->
+  <rect x="90" y="840" width="620" height="300" fill="#e6ffe6" stroke="#666666" stroke-width="2"/>
+  <text x="110" y="860" font-family="Arial" font-size="14">Monitoring Namespace</text>
+  
+  <!-- Graphite -->
+  <rect x="110" y="880" width="180" height="240" fill="#ffe6b3" stroke="#666666" stroke-width="2"/>
+  <text x="130" y="910" font-family="Arial" font-size="12">Graphite</text>
+  <text x="130" y="930" font-family="Arial" font-size="10">• Encrypted Storage</text>
+  <text x="130" y="950" font-family="Arial" font-size="10">• Access Controls</text>
+  
+  <!-- StatsD -->
+  <rect x="510" y="880" width="180" height="240" fill="#ffe6b3" stroke="#666666" stroke-width="2"/>
+  <text x="530" y="910" font-family="Arial" font-size="12">StatsD</text>
+  <text x="530" y="930" font-family="Arial" font-size="10">• Encrypted Metrics</text>
+  <text x="530" y="950" font-family="Arial" font-size="10">• Access Controls</text>
+  
+  <!-- Network Flows -->
+  <!-- External to Edge -->
+  <path d="M300 30 L300 95" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <text x="310" y="70" font-family="Arial" font-size="10" fill="#006600">HTTPS (443)</text>
+  
+  <!-- Edge to ALB -->
+  <path d="M300 145 L170 260" stroke="#006600" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <text x="200" y="200" font-family="Arial" font-size="10" fill="#006600">Filtered HTTPS</text>
+  
+  <!-- ALB to Backend -->
+  <path d="M170 400 L400 560" stroke="#0066cc" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="250" y="480" font-family="Arial" font-size="10" fill="#0066cc">Internal HTTP (8080)</text>
+  
+  <!-- Backend to NAT -->
+  <path d="M490 680 L630 400" stroke="#cc3300" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="540" y="540" font-family="Arial" font-size="10" fill="#cc3300">Outbound Traffic</text>
+  
+  <!-- Backend to Secrets -->
+  <path d="M310 600 L290 600" stroke="#ff3300" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="250" y="590" font-family="Arial" font-size="10" fill="#ff3300">Secret Retrieval</text>
+  
+  <!-- Backend to StatsD -->
+  <path d="M400 800 L600 880" stroke="#9933cc" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="450" y="850" font-family="Arial" font-size="10" fill="#9933cc">Metrics UDP/8125</text>
+  
+  <!-- StatsD to Graphite -->
+  <path d="M510 1000 L290 1000" stroke="#9933cc" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="350" y="990" font-family="Arial" font-size="10" fill="#9933cc">Metrics Storage</text>
+  
+  <!-- Logging Flows -->
+  <path d="M680 160 L680 260" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M680 400 L680 480" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="690" y="300" font-family="Arial" font-size="10" fill="#666666">Log Streams</text>
+  
+  <!-- Define Arrowhead -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="1220" width="700" height="30" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+  <text x="60" y="1240" font-family="Arial" font-size="12">Traffic Types:</text>
+  <line x1="160" y1="1235" x2="200" y2="1235" stroke="#006600" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="210" y="1240" font-family="Arial" font-size="10">HTTPS</text>
+  <line x1="280" y1="1235" x2="320" y2="1235" stroke="#0066cc" stroke-width="2"/>
+  <text x="330" y="1240" font-family="Arial" font-size="10">Internal</text>
+  <line x1="400" y1="1235" x2="440" y2="1235" stroke="#cc3300" stroke-width="2"/>
+  <text x="450" y="1240" font-family="Arial" font-size="10">Outbound</text>
+  <line x1="520" y1="1235" x2="560" y2="1235" stroke="#9933cc" stroke-width="2"/>
+  <text x="570" y="1240" font-family="Arial" font-size="10">Metrics</text>
+  <line x1="640" y1="1235" x2="680" y2="1235" stroke="#666666" stroke-width="2"/>
+  <text x="690" y="1240" font-family="Arial" font-size="10">Logs</text>
+</svg>
